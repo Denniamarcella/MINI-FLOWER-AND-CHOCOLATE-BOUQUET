@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us of Mini Flower & Chocolate Bouquet</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+        body {
+        background-image: url(IMAGES/butterfly.jpg);
+        background-size: 100%;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .logo img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .form-section {
+        width: 50%;
+        padding: 20px;
+        background-color: #ee96c2;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-section h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .form-section form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-section input,.form-section textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-section button[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .team-section {
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team-member {
+        width: 25%;
+        margin: 10px;
+        text-align: center;
+    }
+    .team-member img {
+        width: 100%;
+        border-radius: 50%
+    }
+    .team-member h3 {
+        margin-top: 10px;
+    }
+    .team-member a {
+        color: #333;
+        text-decoration: none;
+    }
+    .aesthetic-line {
+        width: 100%;
+        height: 1px;
+        background-color: #ff0000;
+        margin: 20px 0;
+    }
+        .navbar {
+            background-color: #666666;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #fffdfd; 
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #e21f91e7; 
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Main Menu</a>
+        <a href="material.html">Materials</a>
+        <a href="steps.html">Steps & Instructions</a>
+        <a href="quiz.html">Quiz & Game</a>
+        <a href="faq.html">FAQ & Help Center</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+    <div class="logo">
+        <img src="IMAGES/logo.png" alt="Logo">
+    </div>
+    <main>
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <div class="aesthetic-line"></div>
+        <section class="team-section">
+            <div class="team-member">
+                <img src="IMAGES/asila.png" alt="Asila">
+                <h3>Asila Munirah Binti Zazali</h3>
+                <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
+            </div>
+            <div class="team-member">
+                <img src="IMAGES/niaa.png" alt="Dennia">
+                <h3>Dennia Marcella Anak Denis</h3>
+                <a href="https://wa.me/60109791864" target="_blank">WhatsApp</a>
+            </div>
+            <div class="team-member">
+                <img src="IMAGES/fara.png" alt="Nur Faradahiyah">
+                <h3>Nur Faradahiyah Binti Hasidin</h3>
+                <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
+            </div>
+            <div class="team-member">
+                <img src="IMAGES/khal.png" alt="Nur Khaliqah">
+                <h3>Nur Khaliqah Syarafana Binti Khalib</h3>
+                <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
+            </div>
+            <div class="team-member">
+                <img src="IMAGES/aqilah.png" alt="Nurul Aqilah">
+                <h3>Nurul Aqilah Binti Mohd Fadzil</h3>
+                <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

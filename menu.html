@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Menu of Mini Flower & Chocolate Bouquet</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+        body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            margin-top: 50px;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .button {
+            background-color: #808080; 
+            color: #FFFFFF; 
+            border: none;
+            padding: 35px 70px;
+            font-size: 25px;
+            cursor: pointer;
+            border-radius: 25px; 
+            margin: 0 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e21f91e7;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="VIDEOS/menu.mp4" type="video/mp4">
+    </video>
+
+    <div class="button-container">
+        <div class="button-row">
+          <button class="button" onclick="location.href='index.html'">Home</button>
+          <button class="button" onclick="location.href='material.html'">Materials</button>
+          <button class="button" onclick="location.href='steps.html'">Steps & Instructions</button>
+        </div>
+        <div class="button-row">
+          <button class="button" onclick="location.href='quiz.html'">Quiz</button>
+          <button class="button" onclick="location.href='faq.html'">FAQ & Help Function</button>
+          <button class="button" onclick="location.href='contactus.html'">Contact Us</button>
+        </div>
+      </div>
+</body>
+</html>
